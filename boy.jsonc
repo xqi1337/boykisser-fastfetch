@@ -1,0 +1,115 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "/home/kitty/.config/fastfetch/boykisser/boy.txt",
+    "type": "file-raw",
+    "padding": {
+      "top": 1,
+      "right": 1
+    }
+  },
+  "display": {
+    "separator": "\u001b[38;2;255;105;180m: \u001b[0m",
+    "color": {
+      "keys": "#ff69b4",
+      "title": "#ff69b4",
+      "output": "#ffffff",
+      "separator": "#ff69b4"
+    }
+  },
+  "modules": [
+    "break",
+    "break",
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;255;105;180m╭──────────────────────  \u001b[38;2;255;105;180mHardware\u001b[38;2;255;105;180m  ──────────────────────╮\u001b[0m"
+    },
+    {
+      "type": "cpu",
+      "key": "\u001b[38;2;255;105;180m 󰍛 CPU      \u001b[0m"
+    },
+    {
+      "type": "gpu",
+      "key": "\u001b[38;2;255;105;180m 󰍹 GPU      \u001b[0m",
+      "hideType": "integrated"
+    },
+    {
+      "type": "memory",
+      "key": "\u001b[38;2;255;105;180m  Memory   \u001b[0m"
+    },
+    {
+      "type": "disk",
+      "key": "\u001b[38;2;255;105;180m 󰋊 Storage  \u001b[0m"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;255;105;180m╰────────────────────────────────────────────────────────╯\u001b[0m"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;255;105;180m╭──────────────────────  \u001b[38;2;255;105;180mSoftware\u001b[38;2;255;105;180m  ──────────────────────╮\u001b[0m"
+    },
+    {
+      "type": "os",
+      "key": "\u001b[38;2;255;105;180m  OS       \u001b[0m"
+    },
+    {
+      "type": "kernel",
+      "key": "\u001b[38;2;255;105;180m 󰒋 Kernel   \u001b[0m"
+    },
+    {
+      "type": "shell",
+      "key": "\u001b[38;2;255;105;180m  Shell    \u001b[0m"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;255;105;180m╰────────────────────────────────────────────────────────╯\u001b[0m"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;255;105;180m╭──────────────────────  \u001b[38;2;255;105;180mDesktop\u001b[38;2;255;105;180m  ───────────────────────╮\u001b[0m"
+    },
+    {
+      "type": "de",
+      "key": "\u001b[38;2;255;105;180m  DE       \u001b[0m"
+    },
+    {
+      "type": "wmtheme",
+      "key": "\u001b[38;2;255;105;180m 󰉼 Theme    \u001b[0m"
+    },
+    {
+      "type": "terminal",
+      "key": "\u001b[38;2;255;105;180m  Terminal \u001b[0m"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;255;105;180m╰────────────────────────────────────────────────────────╯\u001b[0m"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;255;105;180m╭──────────────────────  \u001b[38;2;255;105;180mSession\u001b[38;2;255;105;180m  ───────────────────────╮\u001b[0m"
+    },
+    {
+      "type": "command",
+      "key": "\u001b[38;2;255;105;180m  OS Age   \u001b[0m",
+      "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo ${days_difference} days"
+    },
+    {
+      "type": "datetime",
+      "key": "\u001b[38;2;255;105;180m  Date     \u001b[0m"
+    },
+    {
+      "type": "command",
+      "key": "\u001b[38;2;255;105;180m  User     \u001b[0m",
+      "text": "printf '%s (cute femboy btw :3)' \"$(whoami)\""
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;255;105;180m╰────────────────────────────────────────────────────────╯\u001b[0m"
+    }
+  ]
+}
